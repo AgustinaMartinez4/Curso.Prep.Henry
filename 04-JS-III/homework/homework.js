@@ -119,14 +119,12 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí
   // no entendi
-  if(arguments.length < 1){
-    return 0;
-  }
+  if(arguments.length < 1) return 0;
   var multiplicar = 1;
   for(var i = 0; i < arguments.length; i++){
     multiplicar = multiplicar * arguments[i];
-  return multiplicar;
   }
+  return multiplicar;
 }
 
 
@@ -231,17 +229,16 @@ function breakStatement(numero) {
  var suma = numero;
  for(var i = 0; i < 10; i++){
    suma = suma + 2;
- if(suma === i)
-   break;
+ if(suma === i) break;
    else{
      nuevoArray.push(suma);
-   }
-     if(i < 10){
-   return 'Se interrumpió la ejecución'
+   }   
+  }
+  if(i < 10){
+    return 'Se interrumpió la ejecución'
   }
   else{
     return nuevoArray;
-  }
  }
 }
 
